@@ -129,6 +129,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010586538158, guid: d09979aefc8ba7b47a529aba3c279d46,
+        type: 2}
+      propertyPath: fabricEvent
+      value: Weapons/Rock/Shoot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d09979aefc8ba7b47a529aba3c279d46, type: 2}
   m_IsPrefabParent: 0
@@ -216,6 +221,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445701076}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &539213568
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000012898381220, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012898381220, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012898381220, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012898381220, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012898381220, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012898381220, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012898381220, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012898381220, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &791777480
 Prefab:
   m_ObjectHideFlags: 0

@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e538c3f3d509d41a2504e22b12a5ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fabricEvent: Weapons/Bow/Hit/Wood
+  fabricEvent: Weapons/Rock/Hit/Wood
 --- !u!135 &135000013712782040
 SphereCollider:
   m_ObjectHideFlags: 1
