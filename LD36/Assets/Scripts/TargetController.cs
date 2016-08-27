@@ -12,6 +12,7 @@ public class TargetController: MonoBehaviour {
 	Vector3 nextPoint;
 
 	bool activated;
+	bool alive = true;
 
 	Transform targetParts;
 
@@ -38,7 +39,6 @@ public class TargetController: MonoBehaviour {
 	void Activate () {
 		activated = true;
 		anim.Play(actAnim);
-		print("Activated");
 	}
 
 	void Deactivate () {
@@ -48,12 +48,19 @@ public class TargetController: MonoBehaviour {
 
 	public void Die () {
 		anim.Play(deactAnim);
+		alive = false;
 	}
 
 	// Can only collide with player layer
 	void OnTriggerEnter(Collider c) {
-		if (!activated) {
+		if (!activated && alive) {
 			Activate();
+		}
+	}
+
+	void OnTriggerExit (Collider c) {
+		if(activated && alive) {
+			Deactivate();
 		}
 	}
 }
