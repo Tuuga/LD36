@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MusicEgypt
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300001}
+  m_Snapshots:
+  - {fileID: 24500003}
+  - {fileID: 245000010530631334}
+  - {fileID: 245000010344921780}
+  - {fileID: 245000011631270710}
+  - {fileID: 245000011176841464}
+  - {fileID: 245000013733464980}
+  - {fileID: 245000010722557796}
+  m_StartSnapshot: {fileID: 24500003}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - e03674549eddd5f4596ad5405c2353f6
+    - b3a1de32393a2ee4783ddc16177b65e9
+    - b0eb6ec4acf9c954d940b01a1001c2a6
+    - 8b062609999fb764aa46a566c48fd060
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 245000011631270710}
+--- !u!243 &24300001
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: e03674549eddd5f4596ad5405c2353f6
+  m_Children:
+  - {fileID: 243000010670309014}
+  - {fileID: 243000013001880150}
+  - {fileID: 243000011896013270}
+  m_Volume: 15433f3773e4afd4ea31d0f816160965
+  m_Pitch: d4801beedba94f643a2c455d83527369
+  m_Effects:
+  - {fileID: 24400002}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400002
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: e46a2feb085c97a46a132cd4e91703c2
+  m_EffectName: Attenuation
+  m_MixLevel: 0df18bd7fff53f24bbd4fab9cbe47576
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500003
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: EgyptStart
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 95a8c9d87e5f4f746b7cbbeed03a3da0
+  m_FloatValues:
+    15433f3773e4afd4ea31d0f816160965: -80
+  m_TransitionOverrides: {}
+--- !u!243 &243000010670309014
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Drums
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: b3a1de32393a2ee4783ddc16177b65e9
+  m_Children: []
+  m_Volume: dd5d0b6170890c1438166c900fd53cee
+  m_Pitch: 960fc365b1be6a04e86361b157423d9d
+  m_Effects:
+  - {fileID: 244000012935383160}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243000011896013270
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Flute
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 8b062609999fb764aa46a566c48fd060
+  m_Children: []
+  m_Volume: 719221545e4479b469e0e741c7ede2dc
+  m_Pitch: d6e2390c1270c2342a5c37e50b233a05
+  m_Effects:
+  - {fileID: 244000012206142080}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243000013001880150
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Charmer
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: b0eb6ec4acf9c954d940b01a1001c2a6
+  m_Children: []
+  m_Volume: dd4b026a85f46e141972bd6c2724ee4b
+  m_Pitch: 2011fe862a640ac40bc5f969629861fa
+  m_Effects:
+  - {fileID: 244000011450621826}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244000011450621826
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: a0ad90c541f37534aa088b22d1474631
+  m_EffectName: Attenuation
+  m_MixLevel: 20b087c8cc9ecd146956d22fbfc5a7a4
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244000012206142080
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1b1cc4ab0843036449f65fbf0a064497
+  m_EffectName: Attenuation
+  m_MixLevel: 2dcf2011202fa3d4aa747d10e5515e2d
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244000012935383160
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 42b5d647901414041b9b71c65348481c
+  m_EffectName: Attenuation
+  m_MixLevel: f5ac576364367c74e96fd9437c8b8832
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &245000010344921780
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: EgyptFlute
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: add77c64641efb84d98d313a44483fa1
+  m_FloatValues:
+    dd5d0b6170890c1438166c900fd53cee: -80
+    719221545e4479b469e0e741c7ede2dc: 0.3945702
+    15433f3773e4afd4ea31d0f816160965: -0.037667945
+    dd4b026a85f46e141972bd6c2724ee4b: -80
+  m_TransitionOverrides: {}
+--- !u!245 &245000010530631334
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: EgyptCharmer
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 76b3a7e80ecaa96428f6b5aab4735f59
+  m_FloatValues:
+    dd5d0b6170890c1438166c900fd53cee: -80
+    719221545e4479b469e0e741c7ede2dc: -80
+    15433f3773e4afd4ea31d0f816160965: -0.037667945
+  m_TransitionOverrides: {}
+--- !u!245 &245000010722557796
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: EgyptSilent
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 46f5b7732eecb6a41b9829e98ed30d31
+  m_FloatValues:
+    dd5d0b6170890c1438166c900fd53cee: 0.10800299
+    719221545e4479b469e0e741c7ede2dc: 0.3945702
+    15433f3773e4afd4ea31d0f816160965: -80
+  m_TransitionOverrides: {}
+--- !u!245 &245000011176841464
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: EgyptDrums
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: ef001edb37eb5ac4fbe4c0740acadc41
+  m_FloatValues:
+    719221545e4479b469e0e741c7ede2dc: -80
+    15433f3773e4afd4ea31d0f816160965: -0.30163807
+    dd4b026a85f46e141972bd6c2724ee4b: -80
+  m_TransitionOverrides: {}
+--- !u!245 &245000011631270710
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: EgyptFull
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 8412bcc810fd8e840a94754ce707da8d
+  m_FloatValues:
+    dd5d0b6170890c1438166c900fd53cee: 0.10800299
+    719221545e4479b469e0e741c7ede2dc: 0.3945702
+    15433f3773e4afd4ea31d0f816160965: -0.037667945
+  m_TransitionOverrides: {}
+--- !u!245 &245000013733464980
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: EgyptDrumsCharmer
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 32f340f11869a4442b14623ee7430665
+  m_FloatValues:
+    719221545e4479b469e0e741c7ede2dc: -80
+    15433f3773e4afd4ea31d0f816160965: -0.30163807
+    dd4b026a85f46e141972bd6c2724ee4b: 0.10800299
+  m_TransitionOverrides: {}

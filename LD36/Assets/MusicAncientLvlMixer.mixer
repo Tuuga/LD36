@@ -5,14 +5,15 @@ AudioMixerController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: AncientLvlMixer
+  m_Name: MusicAncientLvlMixer
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300001}
   m_Snapshots:
-  - {fileID: 24500003}
   - {fileID: 245000011040695342}
   - {fileID: 245000011234780400}
-  m_StartSnapshot: {fileID: 24500003}
+  - {fileID: 245000012759849262}
+  - {fileID: 245000011178216864}
+  m_StartSnapshot: {fileID: 245000011040695342}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
@@ -26,7 +27,7 @@ AudioMixerController:
     - 45b1e6b0361c1d3469c71a0963d2d5f2
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 245000011040695342}
+  m_TargetSnapshot: {fileID: 245000011178216864}
 --- !u!243 &24300001
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -61,16 +62,6 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
---- !u!245 &24500003
-AudioMixerSnapshotController:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Snapshot
-  m_AudioMixer: {fileID: 24100000}
-  m_SnapshotID: 54106794c82a60643a40e0f4b60d23fe
-  m_FloatValues: {}
-  m_TransitionOverrides: {}
 --- !u!243 &243000010441448844
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -196,26 +187,57 @@ AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Start
+  m_Name: StoneAgeStart
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: a50f254c750dfbd4190c3d95a6b3a4da
   m_FloatValues:
-    d867ebc21334c4849982152bd303abed: -20.610773
-    c9aeaa2792a76d040b0e7a76e61c00e5: 0.025578514
-    d69ccf79d6216b043b44bdfb5c7019eb: 0.025578512
-    09fbc50a761314f4dbca5f098e6eea6e: -0.037667945
+    d867ebc21334c4849982152bd303abed: -8.841784
+    c9aeaa2792a76d040b0e7a76e61c00e5: -0.002441872
+    d69ccf79d6216b043b44bdfb5c7019eb: -0.19117382
+    09fbc50a761314f4dbca5f098e6eea6e: -80
+    481b858cc4892114cb2348cd70ee9db3: -80
+  m_TransitionOverrides: {}
+--- !u!245 &245000011178216864
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Silent
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 0275c660b7b18ee48b9ec1153c34e132
+  m_FloatValues:
+    d867ebc21334c4849982152bd303abed: -80
+    c9aeaa2792a76d040b0e7a76e61c00e5: -80
+    d69ccf79d6216b043b44bdfb5c7019eb: -80
+    09fbc50a761314f4dbca5f098e6eea6e: -80
+    481b858cc4892114cb2348cd70ee9db3: -80
   m_TransitionOverrides: {}
 --- !u!245 &245000011234780400
 AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Drms
+  m_Name: StoneAgeDrms
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: b8857b98ebb3c4546b310b3d70b1613f
   m_FloatValues:
-    d867ebc21334c4849982152bd303abed: -20.610773
+    d867ebc21334c4849982152bd303abed: -9.332112
     c9aeaa2792a76d040b0e7a76e61c00e5: -80
     d69ccf79d6216b043b44bdfb5c7019eb: -80
     09fbc50a761314f4dbca5f098e6eea6e: -80
+    481b858cc4892114cb2348cd70ee9db3: -0.08374829
+  m_TransitionOverrides: {}
+--- !u!245 &245000012759849262
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: StoneAgeFull
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: a863d310c7ef3734c95aed8ecd0d9eb9
+  m_FloatValues:
+    d867ebc21334c4849982152bd303abed: -9.332112
+    c9aeaa2792a76d040b0e7a76e61c00e5: 0.10800299
+    d69ccf79d6216b043b44bdfb5c7019eb: 0.10800299
+    09fbc50a761314f4dbca5f098e6eea6e: -12.082023
   m_TransitionOverrides: {}
