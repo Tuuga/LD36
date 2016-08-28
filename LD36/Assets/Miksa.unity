@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: RunningStep2
-  _eventID: 0
+  _eventID: 993452167
   _overrideEventTriggerAction: 0
   _overrideParameters:
     _overrideIncomingEventAction: 0
@@ -481,6 +481,11 @@ Prefab:
       propertyPath: _eventList.Array.data[13]
       value: Weapons/Rock/Shoot
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010590120920, guid: 034c06df1c911bf45aec4820edcab169,
+        type: 2}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e46eae13e6dfae34da4eb2dedbb6a118, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 034c06df1c911bf45aec4820edcab169, type: 2}
   m_IsPrefabParent: 0
