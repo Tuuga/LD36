@@ -6,12 +6,17 @@ public class PlayerController: MonoBehaviour {
 	public float movSpeed;
 	public float sprintSpeed;
 	public float crouchSpeed;
+	public float walkInterval;
+	public float sprintInterval;
 	public float mouseSens;
 	public float upDownRange;
 
 	float verticalRotation;
 	float horizontalRotation;
-	float starMovSpeed;
+	float startMovSpeed;
+	float stepTimer;
+
+	int stepCount;
 
 	bool mouseLock;
 
@@ -21,7 +26,7 @@ public class PlayerController: MonoBehaviour {
 	CapsuleCollider cc;
 	void Start () {
 		cc = GetComponent<CapsuleCollider>();
-		starMovSpeed = movSpeed;
+		startMovSpeed = movSpeed;
 		MouseLock();
 		mainCam = GameObject.FindGameObjectWithTag("MainCamera");
 	}
@@ -62,11 +67,17 @@ public class PlayerController: MonoBehaviour {
 	}
 
 	void Movement () {
+		float playSpeed = walkInterval;
+		bool sprinting = false;
 		Vector3 moveDir = new Vector3();
 		moveDir += transform.forward * Input.GetAxis("Vertical");
 		moveDir += transform.right * Input.GetAxis("Horizontal");
 
 		moveDir.y = 0;
+
+		// normalize dir if not smoothing
+		if (moveDir.magnitude > 1)
+			moveDir.Normalize();
 
 		if (Input.GetButtonDown("Jump")) {
 			Jump();
@@ -75,17 +86,40 @@ public class PlayerController: MonoBehaviour {
 		// Sprint if Shift and running forward or forward diagonally
 		if (Input.GetButton("Sprint") && Vector3.Dot(transform.forward, moveDir) > 0) {
 			movSpeed = sprintSpeed;
+			playSpeed = sprintInterval;
+			sprinting = true;
 		}
 
 		if(Input.GetButton("Crouch")) {
 			Crouch();
+			playSpeed = walkInterval * (startMovSpeed / crouchSpeed);
 		}
 		if(Input.GetButtonUp("Crouch")) {
 			Stand();
 		}
 
+		//Sound
+		stepTimer += Time.deltaTime * moveDir.magnitude;
+		if(stepTimer >= playSpeed) {
+			stepTimer = 0;
+			stepCount++;
+			if (sprinting) {
+				if (stepCount % 2 == 0) {
+					Fabric.EventManager.Instance.PostEvent("RunningStep1");
+				} else {
+					Fabric.EventManager.Instance.PostEvent("RunningStep2");
+				}
+			} else {
+				if (stepCount % 2 == 0) {
+					Fabric.EventManager.Instance.PostEvent("WalkingStep1");
+				} else {
+					Fabric.EventManager.Instance.PostEvent("WalkingStep2");
+				}
+			}
+		}
+
 		transform.position += moveDir * movSpeed * Time.deltaTime;
-		movSpeed = starMovSpeed;
+		movSpeed = startMovSpeed;
 	}
 
 	void Jump () {

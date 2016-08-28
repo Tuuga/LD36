@@ -115,6 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movSpeed: 5
   sprintSpeed: 10
+  crouchSpeed: 2.5
+  stepInterval: 0.5
   mouseSens: 100
   upDownRange: 90
 --- !u!136 &136000012203697232
