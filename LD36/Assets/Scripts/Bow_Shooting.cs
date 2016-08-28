@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Rock_Shooting : MonoBehaviour {
+public class Bow_Shooting : MonoBehaviour {
 
 	public GameObject projectile;
 	public float force;

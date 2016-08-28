@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000010017040552}
   - 114: {fileID: 114000012846666774}
   m_Layer: 10
-  m_Name: RockWeapon
+  m_Name: Rock_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
