@@ -22,9 +22,9 @@ public class TargetController: MonoBehaviour {
 
 	Animator anim;
 	void Start () {
-		pointA = transform.position;
+        targetParts = transform.Find("Target Parts");
+        pointA = targetParts.position;
 		pointB = transform.Find("Point B").position;
-		targetParts = transform.Find("Target Parts");
 		anim = targetParts.GetComponent<Animator>();
 
 		nextPoint = transform.position;
