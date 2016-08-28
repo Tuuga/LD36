@@ -4,14 +4,11 @@ using System.Collections;
 public class TargetController: MonoBehaviour {
 
 	public float speed;
-	public string actAnim;
 	public int headHP;
 	public int bodyHP;
 
 	int timesShotHead;
-	int timesShotBody;	
-
-	string deactAnim;
+	int timesShotBody;
 
 	Vector3 pointA;
 	Vector3 pointB;
@@ -29,32 +26,30 @@ public class TargetController: MonoBehaviour {
 		pointB = transform.Find("Point B").position;
 		targetParts = transform.Find("Target Parts");
 		anim = targetParts.GetComponent<Animator>();
-		deactAnim = actAnim + "R";
+
+		nextPoint = transform.position;
 	}
 	
 	void Update () {
-		if (Vector3.Distance(targetParts.position, pointA) < 0.2f) {
-			nextPoint = pointB;
-		} else if (Vector3.Distance(targetParts.position, pointB) < 0.2f) {
-			nextPoint = pointA;
-		}
 
-		Vector3 dir = (nextPoint - targetParts.position).normalized;
-		targetParts.position += dir * speed * Time.deltaTime;
+		if (Vector3.Distance(nextPoint, targetParts.position) > 0.1f) {
+			Vector3 dir = (nextPoint - targetParts.position).normalized;
+			targetParts.position += dir * speed * Time.deltaTime;
+		}
 	}
 
 	void Activate () {
+		nextPoint = pointB;
 		activated = true;
-		anim.Play(actAnim);
 	}
 
 	void Deactivate () {
-		anim.Play(deactAnim);
+		nextPoint = pointA;
 		activated = false;
 	}
 
 	public void Die () {
-		anim.Play(deactAnim);
+		Deactivate();
 		alive = false;
 	}
 
