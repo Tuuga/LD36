@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Shooting : MonoBehaviour {
+public class Rock_Shooting : MonoBehaviour {
 
 	public GameObject projectile;
 	public float force;
@@ -13,7 +13,7 @@ public class Shooting : MonoBehaviour {
 
 	void Start () {
 		mainCam = GameObject.FindGameObjectWithTag("MainCamera");
-		shootPos = transform.Find("Shoot Point");
+		shootPos = GameObject.Find("Shoot Point").transform;
 	}
 
 	void Update () {
@@ -27,7 +27,5 @@ public class Shooting : MonoBehaviour {
         GameObject projIns = (GameObject)Instantiate(projectile, shootPos.position, Quaternion.identity);
 		var rb = projIns.GetComponent<Rigidbody>();
 		rb.velocity = (mainCam.transform.forward + Vector3.up * upForce).normalized * force;
-
-        
 	}
 }

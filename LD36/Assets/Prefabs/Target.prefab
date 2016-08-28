@@ -37,7 +37,6 @@ GameObject:
   - 4: {fileID: 4000011142970882}
   - 114: {fileID: 114000010624833510}
   - 54: {fileID: 54000013412277254}
-  - 114: {fileID: 114000012571207442}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -420,6 +419,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   actAnim: PeekRight
+  headHP: 1
+  bodyHP: 2
 --- !u!114 &114000011355860902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -432,19 +433,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ownType: 0
---- !u!114 &114000012571207442
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010874464960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f11598a25278da4a8cc65d15184eb29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  headHP: 1
-  bodyHP: 2
 --- !u!114 &114000012607197310
 MonoBehaviour:
   m_ObjectHideFlags: 1

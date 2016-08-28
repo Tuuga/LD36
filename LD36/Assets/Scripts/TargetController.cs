@@ -22,6 +22,7 @@ public class TargetController: MonoBehaviour {
 
 	Transform targetParts;
 
+
 	Animator anim;
 	void Start () {
 		pointA = transform.position;
