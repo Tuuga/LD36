@@ -219,6 +219,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ded52c5a29f84b5fa712e635dd1663f, type: 3}
   m_IsPrefabParent: 0
+--- !u!1001 &1871331418
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: b4c68a7c73bcc40749ecf347a2f3db08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: b4c68a7c73bcc40749ecf347a2f3db08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: b4c68a7c73bcc40749ecf347a2f3db08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.345
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: b4c68a7c73bcc40749ecf347a2f3db08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: b4c68a7c73bcc40749ecf347a2f3db08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: b4c68a7c73bcc40749ecf347a2f3db08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: b4c68a7c73bcc40749ecf347a2f3db08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: b4c68a7c73bcc40749ecf347a2f3db08, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b4c68a7c73bcc40749ecf347a2f3db08, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1899926754
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,4 +323,4 @@ Transform:
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
