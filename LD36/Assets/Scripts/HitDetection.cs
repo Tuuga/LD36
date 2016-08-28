@@ -13,23 +13,22 @@ public class HitDetection : MonoBehaviour {
 	}
 
 	public void GotHit () {
-		if (!head) {
+		if (hitHead) {
 			print("HeadShot");
 			tc.Hit(true);
-		} else if (head) {
-			print("BodyShot");
+		} else {
+			//print("BodyShot");
 			tc.Hit(false);
 		}
 	}
 
 	public void SetHit (bool b) {
 		hitHead = b;
-		print(name + " " + hitHead);
 	}
 
 	void OnTriggerEnter(Collider c) {
 		if (c.tag == "Projectile") {
-			GetComponentInParent<HitDetection>().SetHit(head);
+			transform.parent.GetComponent<HitDetection>().hitHead = head;
 		}
 	}
 

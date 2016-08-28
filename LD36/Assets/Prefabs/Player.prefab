@@ -11,6 +11,22 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1000012493927998}
   m_IsPrefabParent: 1
+--- !u!1 &1000010987832380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013407882708}
+  - 114: {fileID: 114000013895833464}
+  m_Layer: 0
+  m_Name: Lazer_Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1000011944161948
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,6 +39,22 @@ GameObject:
   m_Name: Shoot Point
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012026099506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012227668400}
+  - 114: {fileID: 114000010922334896}
+  m_Layer: 0
+  m_Name: WeaponManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -45,6 +77,138 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000012652759122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010735901336}
+  - 114: {fileID: 114000011212636736}
+  m_Layer: 10
+  m_Name: Bow_Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1000012657137232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011418321336}
+  - 114: {fileID: 114000012594385932}
+  m_Layer: 10
+  m_Name: Rock_Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1000012883729636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010054479816}
+  - 114: {fileID: 114000012373483240}
+  m_Layer: 10
+  m_Name: Musket_Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1000013106333930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011156269186}
+  - 114: {fileID: 114000012036817396}
+  m_Layer: 0
+  m_Name: MP40_Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1000013661900320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012971263354}
+  - 114: {fileID: 114000011190795366}
+  m_Layer: 0
+  m_Name: Crossbow_Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4000010054479816
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012883729636}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012219434456}
+  m_RootOrder: 4
+--- !u!4 &4000010735901336
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012652759122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012219434456}
+  m_RootOrder: 2
+--- !u!4 &4000011156269186
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013106333930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012219434456}
+  m_RootOrder: 5
+--- !u!4 &4000011418321336
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012657137232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012219434456}
+  m_RootOrder: 1
 --- !u!4 &4000012219434456
 Transform:
   m_ObjectHideFlags: 1
@@ -57,8 +221,28 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_Children:
   - {fileID: 4000012681612444}
+  - {fileID: 4000011418321336}
+  - {fileID: 4000010735901336}
+  - {fileID: 4000012971263354}
+  - {fileID: 4000010054479816}
+  - {fileID: 4000011156269186}
+  - {fileID: 4000013407882708}
+  - {fileID: 4000012227668400}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &4000012227668400
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012026099506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012219434456}
+  m_RootOrder: 7
 --- !u!4 &4000012681612444
 Transform:
   m_ObjectHideFlags: 1
@@ -72,6 +256,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000012219434456}
   m_RootOrder: 0
+--- !u!4 &4000012971263354
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013661900320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012219434456}
+  m_RootOrder: 3
+--- !u!4 &4000013407882708
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010987832380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012219434456}
+  m_RootOrder: 6
 --- !u!54 &54000012095437862
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -87,6 +297,58 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114000010922334896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012026099506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33daf53d323e1914ebaa72b58395470b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 1000012657137232}
+  - {fileID: 1000012652759122}
+  - {fileID: 1000013661900320}
+  - {fileID: 1000012883729636}
+  - {fileID: 1000013106333930}
+  - {fileID: 1000010987832380}
+--- !u!114 &114000011190795366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013661900320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909d2d06fb605364caef740c2ceea5fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1000012155317314, guid: 41ec70ba725a3ad46919a1c32f654932, type: 2}
+  force: 20
+  upForce: 0.1
+  reloadTime: 3
+  fabricEventShoot: Weapons/Crossbow/Shoot
+--- !u!114 &114000011212636736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012652759122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9625fcc7ed0d0894ea8bb50adbe6a43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1000012261222542, guid: 2090bd9e9b694d54c9ba9ca92996f251, type: 2}
+  force: 15
+  upForce: 0.2
+  maxDrawTime: 1
+  minDrawTime: 0.2
+  fabricEventShoot: Weapons/Bow/Shoot
+  fabricEventDraw: Weapons/Bow/Draw
 --- !u!114 &114000011639306236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,6 +367,74 @@ MonoBehaviour:
   sprintInterval: 0.3
   mouseSens: 100
   upDownRange: 90
+--- !u!114 &114000012036817396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013106333930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9de05097a959743abc943369f690ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 0.05
+  recoil: 3
+  mask:
+    serializedVersion: 2
+    m_Bits: 257
+  fabricEvent: Weapons/MP40/Shoot
+--- !u!114 &114000012373483240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012883729636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9bd7b09097e284cb5ad835dadc3893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reloadTime: 3
+  recoil: 1
+  mask:
+    serializedVersion: 2
+    m_Bits: 257
+  fabricEvent: Weapons/Musket/Shoot
+--- !u!114 &114000012594385932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012657137232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af08ba0e06cf18944ae6db9fa036e78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1000012261222542, guid: de8a0c28309e66945b3a6472e4bf453e, type: 2}
+  force: 15
+  upForce: 0.2
+  fabricEvent: Weapons/Rock/Shoot
+--- !u!114 &114000013895833464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010987832380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e340f3bff29ca9b41bc6565d5d58adb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reloadTime: 0.3
+  recoil: 0
+  force: 100
+  mask:
+    serializedVersion: 2
+    m_Bits: 257
+  projectile: {fileID: 1000010794529832, guid: e1e40e75e53297d43b5a3348cc9bd675, type: 2}
+  fabricEvent: Weapons/Lazergun/Shoot
 --- !u!136 &136000012203697232
 CapsuleCollider:
   m_ObjectHideFlags: 1

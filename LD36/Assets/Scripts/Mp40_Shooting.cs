@@ -37,8 +37,13 @@ public class Mp40_Shooting : MonoBehaviour {
 
 		RaycastHit hit;
 		if (Physics.Raycast(mainCam.transform.position, dir, out hit, Mathf.Infinity, mask)) {
-			if(hit.transform.tag == "Target") {
-				hit.transform.GetComponent<HitDetection>().GotHit();
+			if (hit.transform.tag == "Target") {
+				if (hit.collider.name == "Head") {
+					hit.transform.parent.GetComponent<HitDetection>().hitHead = true;
+				} else if (hit.collider.name == "Body") {
+					hit.transform.parent.GetComponent<HitDetection>().hitHead = false;
+				}
+				hit.transform.parent.GetComponent<HitDetection>().GotHit();
 			}
 			Debug.DrawLine(mainCam.transform.position, hit.point);
 		}
