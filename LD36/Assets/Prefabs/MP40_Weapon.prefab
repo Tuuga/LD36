@@ -9,52 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000013943611688}
+  m_RootGameObject: {fileID: 1000013528214888}
   m_IsPrefabParent: 1
---- !u!1 &1000013943611688
+--- !u!1 &1000013528214888
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000010017040552}
-  - 114: {fileID: 114000014095245482}
-  m_Layer: 10
-  m_Name: Bow_Weapon
+  - 4: {fileID: 4000013099890280}
+  - 114: {fileID: 114000013084133866}
+  m_Layer: 0
+  m_Name: MP40_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000010017040552
+--- !u!4 &4000013099890280
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013943611688}
+  m_GameObject: {fileID: 1000013528214888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &114000014095245482
+--- !u!114 &114000013084133866
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013943611688}
+  m_GameObject: {fileID: 1000013528214888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9625fcc7ed0d0894ea8bb50adbe6a43c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e9de05097a959743abc943369f690ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1000012261222542, guid: 2090bd9e9b694d54c9ba9ca92996f251, type: 2}
-  force: 15
-  upForce: 0.2
-  maxDrawTime: 1
-  minDrawTime: 0.2
-  fabricEventShoot: Weapons/Bow/Shoot
-  fabricEventDraw: Weapons/Bow/Draw
+  fireRate: 0.05
+  randAim: 10
+  fabricEvent: Weapons/MP40/Shoot

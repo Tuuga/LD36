@@ -35,7 +35,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012219434456}
   - 114: {fileID: 114000011639306236}
-  - 114: {fileID: 114000010586538158}
   - 54: {fileID: 54000012095437862}
   - 136: {fileID: 136000012203697232}
   m_Layer: 10
@@ -87,21 +86,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114000010586538158
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012493927998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af08ba0e06cf18944ae6db9fa036e78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 1000012261222542, guid: de8a0c28309e66945b3a6472e4bf453e, type: 2}
-  force: 15
-  upForce: 0.2
-  fabricEvent: Weapons/Rock/Shoot
 --- !u!114 &114000011639306236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,7 +100,8 @@ MonoBehaviour:
   movSpeed: 5
   sprintSpeed: 10
   crouchSpeed: 2.5
-  stepInterval: 0.5
+  walkInterval: 0.5
+  sprintInterval: 0.3
   mouseSens: 100
   upDownRange: 90
 --- !u!136 &136000012203697232

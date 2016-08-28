@@ -10,9 +10,13 @@ public class Arrow : MonoBehaviour {
 	Quaternion _attachRot;
 	Quaternion _ownRot;
 	Vector3 _attachDir;
+	Rigidbody rb;
+
+	void Start () {
+		rb = GetComponent<Rigidbody>();
+	}
 
 	void OnCollisionEnter(Collision c) {
-		var rb = GetComponent<Rigidbody>();
 		rb.isKinematic = true;
 		hit = true;
 		Attach(c.transform);
