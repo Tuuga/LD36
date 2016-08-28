@@ -11,11 +11,15 @@ public class HitDetection : MonoBehaviour {
 		tc = transform.GetComponentInParent<TargetController>();
 	}
 
-	void OnCollisionEnter(Collision c) {
+	public void GotHit () {
 		if (ownType == ColliderType.Head) {
 			tc.Hit(true);
 		} else {
 			tc.Hit(false);
 		}
+	}
+
+	void OnCollisionEnter(Collision c) {
+		GotHit();
 	}
 }
