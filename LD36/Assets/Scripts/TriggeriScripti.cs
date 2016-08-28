@@ -11,15 +11,14 @@ public class TriggeriScripti : MonoBehaviour
     public float transitiontime;
 
     // Use this for initialization
-    void Start()
-    {
-        Fabric.EventManager.Instance.PostEvent("play music"); // kaikki träkit ruoeavat soimaan startissa
-    }
+
     void OnTriggerEnter(Collider c) 
     {
-    
-        mix1.TransitionTo(transitiontime);
-        print("triggasi");
+    if (c.tag == "Player")
+        {
+            mix1.TransitionTo(transitiontime);
+            print("triggasi");
+        }      
    
         }
 
