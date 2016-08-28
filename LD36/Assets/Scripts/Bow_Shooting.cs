@@ -31,7 +31,6 @@ public class Bow_Shooting : MonoBehaviour {
 				Fabric.EventManager.Instance.PostEvent(fabricEventDraw, gameObject);
 				startDraw = true;
 			}
-			// Audio here
         }
 		if (Input.GetButtonUp("Fire1") && drawTimer > minDrawTime) {
 			Shoot();
