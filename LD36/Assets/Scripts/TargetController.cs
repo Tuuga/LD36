@@ -5,6 +5,12 @@ public class TargetController: MonoBehaviour {
 
 	public float speed;
 	public string actAnim;
+	public int headHP;
+	public int bodyHP;
+
+	int timesShotHead;
+	int timesShotBody;	
+
 	string deactAnim;
 
 	Vector3 pointA;
@@ -24,7 +30,7 @@ public class TargetController: MonoBehaviour {
 		anim = targetParts.GetComponent<Animator>();
 		deactAnim = actAnim + "R";
 	}
-
+	
 	void Update () {
 		if (Vector3.Distance(targetParts.position, pointA) < 0.2f) {
 			nextPoint = pointB;
@@ -49,6 +55,17 @@ public class TargetController: MonoBehaviour {
 	public void Die () {
 		anim.Play(deactAnim);
 		alive = false;
+	}
+
+	public void Hit(bool head) {
+		if (head) {
+			timesShotHead++;
+		} else {
+			timesShotBody++;
+		}
+		if (timesShotHead >= headHP || timesShotBody >= bodyHP) {
+			Die();
+		}
 	}
 
 	// Can only collide with player layer

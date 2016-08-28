@@ -6,9 +6,9 @@ public class HitDetection : MonoBehaviour {
 	public enum ColliderType { Head, Body };
 	public ColliderType ownType;
 
-	TargetCollision tc;
+	TargetController tc;
 	void Start () {
-		tc = transform.GetComponentInParent<TargetCollision>();
+		tc = transform.GetComponentInParent<TargetController>();
 	}
 
 	void OnCollisionEnter(Collision c) {
