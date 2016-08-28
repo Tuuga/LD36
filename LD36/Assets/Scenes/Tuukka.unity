@@ -129,10 +129,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114000010586538158, guid: d09979aefc8ba7b47a529aba3c279d46,
+    - target: {fileID: 136000012203697232, guid: d09979aefc8ba7b47a529aba3c279d46,
         type: 2}
-      propertyPath: fabricEvent
-      value: Weapons/Rock/Shoot
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 136000012203697232, guid: d09979aefc8ba7b47a529aba3c279d46,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011639306236, guid: d09979aefc8ba7b47a529aba3c279d46,
+        type: 2}
+      propertyPath: crouchSpeed
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d09979aefc8ba7b47a529aba3c279d46, type: 2}
