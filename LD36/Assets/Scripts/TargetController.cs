@@ -35,6 +35,8 @@ public class TargetController: MonoBehaviour {
 		if (Vector3.Distance(nextPoint, targetParts.position) > 0.1f) {
 			Vector3 dir = (nextPoint - targetParts.position).normalized;
 			targetParts.position += dir * speed * Time.deltaTime;
+		} else {
+			targetParts.position = nextPoint;
 		}
 	}
 
@@ -66,13 +68,13 @@ public class TargetController: MonoBehaviour {
 
 	// Can only collide with player layer
 	void OnTriggerEnter(Collider c) {
-		if (!activated && alive) {
+		if (!activated && alive && c.tag == "Player") {
 			Activate();
 		}
 	}
 
 	void OnTriggerExit (Collider c) {
-		if(activated && alive) {
+		if(activated && alive && c.tag == "Player") {
 			Deactivate();
 		}
 	}

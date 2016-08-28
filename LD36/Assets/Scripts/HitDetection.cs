@@ -3,8 +3,9 @@ using System.Collections;
 
 public class HitDetection : MonoBehaviour {
 
-	public enum ColliderType { Head, Body };
-	public ColliderType ownType;
+	public enum ColliderType { None ,Head, Body };
+	public bool head;
+	public bool hitHead;
 
 	TargetController tc;
 	void Start () {
@@ -12,14 +13,29 @@ public class HitDetection : MonoBehaviour {
 	}
 
 	public void GotHit () {
-		if (ownType == ColliderType.Head) {
+		if (!head) {
+			print("HeadShot");
 			tc.Hit(true);
-		} else {
+		} else if (head) {
+			print("BodyShot");
 			tc.Hit(false);
 		}
 	}
 
+	public void SetHit (bool b) {
+		hitHead = b;
+		print(name + " " + hitHead);
+	}
+
+	void OnTriggerEnter(Collider c) {
+		if (c.tag == "Projectile") {
+			GetComponentInParent<HitDetection>().SetHit(head);
+		}
+	}
+
 	void OnCollisionEnter(Collision c) {
-		GotHit();
+		if (c.transform.tag == "Projectile" && name == "Target Parts") {
+			GotHit();
+		}
 	}
 }
