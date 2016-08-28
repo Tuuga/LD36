@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1000012155317314, guid: 41ec70ba725a3ad46919a1c32f654932, type: 2}
-  force: 15
-  upForce: 0.2
+  force: 20
+  upForce: 0.1
   reloadTime: 3
   fabricEventShoot: Weapons/Crossbow/Shoot

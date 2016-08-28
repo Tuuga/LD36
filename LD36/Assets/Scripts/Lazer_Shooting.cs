@@ -43,6 +43,7 @@ public class Lazer_Shooting : MonoBehaviour {
 		dir = aimRot * dir;
 
 		GameObject projIns = (GameObject)Instantiate(projectile, shootPos.position, mainCam.transform.rotation);
+		Destroy(projIns, 3f);
 		var rb = projIns.GetComponent<Rigidbody>();
 		rb.velocity = dir * force;
 

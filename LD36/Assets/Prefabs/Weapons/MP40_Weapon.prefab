@@ -52,5 +52,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 0.05
-  randAim: 10
+  recoil: 3
+  mask:
+    serializedVersion: 2
+    m_Bits: 257
   fabricEvent: Weapons/MP40/Shoot

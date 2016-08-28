@@ -50,9 +50,6 @@ public class PlayerController: MonoBehaviour {
 
 		transform.localRotation = Quaternion.Euler(0, horizontalRotation, 0) * baseRotation;
 		mainCam.transform.localRotation = Quaternion.Euler(verticalRotation, horizontalRotation, 0) * baseRotation;
-
-		mainCam.transform.position = transform.position;
-
 	}
 
 	void MouseLock () {
@@ -90,7 +87,8 @@ public class PlayerController: MonoBehaviour {
 			sprinting = true;
 		}
 
-		if(Input.GetButton("Crouch")) {
+		mainCam.transform.position = transform.position;
+		if (Input.GetButton("Crouch")) {
 			Crouch();
 			playSpeed = walkInterval * (startMovSpeed / crouchSpeed);
 		}
@@ -129,13 +127,13 @@ public class PlayerController: MonoBehaviour {
 	void Crouch () {
 		movSpeed = crouchSpeed;
 		cc.height = 1;
-		cc.center = Vector3.zero;
-		transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
+		cc.center = new Vector3(0, -1f, 0);
+		mainCam.transform.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
 	}
 
 	void Stand () {
 		cc.height = 2;
 		cc.center = new Vector3(0, -0.5f, 0);
-		transform.position = new Vector3(transform.position.x, 1.5f, transform.position.z);
+		mainCam.transform.position = transform.position;
 	}
 }

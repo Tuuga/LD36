@@ -24,7 +24,9 @@ public class Rock_Shooting : MonoBehaviour {
 
 	void Shoot () {
         Fabric.EventManager.Instance.PostEvent(fabricEvent, gameObject);
-        GameObject projIns = (GameObject)Instantiate(projectile, shootPos.position, mainCam.transform.rotation);
+
+		var randomRot = Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
+        GameObject projIns = (GameObject)Instantiate(projectile, shootPos.position, randomRot);
 		var rb = projIns.GetComponent<Rigidbody>();
 		rb.velocity = (mainCam.transform.forward + Vector3.up * upForce).normalized * force;
 	}
