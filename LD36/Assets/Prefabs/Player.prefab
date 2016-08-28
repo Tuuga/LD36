@@ -101,6 +101,7 @@ MonoBehaviour:
   projectile: {fileID: 1000012261222542, guid: de8a0c28309e66945b3a6472e4bf453e, type: 2}
   force: 15
   upForce: 0.2
+  fabricEvent: Weapons/Rock/Shoot
 --- !u!114 &114000011639306236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movSpeed: 5
+  sprintSpeed: 10
   mouseSens: 100
   upDownRange: 90
 --- !u!136 &136000012203697232
