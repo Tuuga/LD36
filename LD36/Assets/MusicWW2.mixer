@@ -10,6 +10,10 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300001}
   m_Snapshots:
   - {fileID: 24500003}
+  - {fileID: 245000013875281324}
+  - {fileID: 245000010860123216}
+  - {fileID: 245000014096268176}
+  - {fileID: 245000010916514174}
   m_StartSnapshot: {fileID: 24500003}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -18,9 +22,12 @@ AudioMixerController:
   m_AudioMixerGroupViews:
   - guids:
     - d953e60e2eff82843b65faf336141f84
+    - dbe27fd6caf80d54a9a9fee9cae1a3a7
+    - d1e81bf3b7985254681da6d966163d0d
+    - 652f67ba822c50c41981e1d0f03beecf
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24500003}
+  m_TargetSnapshot: {fileID: 245000010916514174}
 --- !u!243 &24300001
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -29,7 +36,10 @@ AudioMixerGroupController:
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: d953e60e2eff82843b65faf336141f84
-  m_Children: []
+  m_Children:
+  - {fileID: 243000012752682360}
+  - {fileID: 243000012015331196}
+  - {fileID: 243000014028140808}
   m_Volume: 02145c29f00e8b9498e495e139ea6c38
   m_Pitch: df117c58ec0918c4b9c44a85455cc4fa
   m_Effects:
@@ -56,8 +66,156 @@ AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Snapshot
+  m_Name: WW2Start
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 8c8637144b8db5b418114069670199e9
-  m_FloatValues: {}
+  m_FloatValues:
+    c830fbd07753c874d8e908ca5435a20c: 0
+    02145c29f00e8b9498e495e139ea6c38: -80
+  m_TransitionOverrides: {}
+--- !u!243 &243000012015331196
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WW2Horns
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: d1e81bf3b7985254681da6d966163d0d
+  m_Children: []
+  m_Volume: d2cba271535e74443b563f529367b6e7
+  m_Pitch: c4e6175d3fd38df419a15e4cd7e3d593
+  m_Effects:
+  - {fileID: 244000010936227184}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243000012752682360
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WW2Drums
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: dbe27fd6caf80d54a9a9fee9cae1a3a7
+  m_Children: []
+  m_Volume: c830fbd07753c874d8e908ca5435a20c
+  m_Pitch: 39089b3ab38593648963e7f992583a30
+  m_Effects:
+  - {fileID: 244000010137242244}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243000014028140808
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WW2Effects
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 652f67ba822c50c41981e1d0f03beecf
+  m_Children: []
+  m_Volume: 59ff7a9af39dc5a4788aeaf5e47a0475
+  m_Pitch: 3fe6ee3fc41b0664cb4af1ae28ba6186
+  m_Effects:
+  - {fileID: 244000012932914322}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244000010137242244
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 136b033d64ee9044db1ed03828052fbb
+  m_EffectName: Attenuation
+  m_MixLevel: bf1e235133c221b4d95d3bbf49349df8
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244000010936227184
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: b2bcbf490b0e36a409365b94cc4098a9
+  m_EffectName: Attenuation
+  m_MixLevel: 6a0b6fda6694d9042b1e0486a6477e18
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244000012932914322
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: f227e9806d6f18448ad8e6e70cf8bae1
+  m_EffectName: Attenuation
+  m_MixLevel: 1c04601b99ab6b942a313f66c41ae569
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &245000010860123216
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WW2Horns
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 9357db71b48f31043b5e303e748c3464
+  m_FloatValues:
+    c830fbd07753c874d8e908ca5435a20c: -0.27209902
+    d2cba271535e74443b563f529367b6e7: -0.19117308
+    02145c29f00e8b9498e495e139ea6c38: 0.025578512
+    59ff7a9af39dc5a4788aeaf5e47a0475: -80
+  m_TransitionOverrides: {}
+--- !u!245 &245000010916514174
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WW2Silent
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: b1ec765679e5c48438bb7b3bea022db4
+  m_FloatValues:
+    c830fbd07753c874d8e908ca5435a20c: -0.27209902
+    d2cba271535e74443b563f529367b6e7: -0.19117308
+    02145c29f00e8b9498e495e139ea6c38: -80
+    59ff7a9af39dc5a4788aeaf5e47a0475: -0.58106005
+  m_TransitionOverrides: {}
+--- !u!245 &245000013875281324
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WW2Drums
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 3c755883fe631ec479921a09ccb8320c
+  m_FloatValues:
+    c830fbd07753c874d8e908ca5435a20c: -0.27209902
+    d2cba271535e74443b563f529367b6e7: -80
+    02145c29f00e8b9498e495e139ea6c38: 0.025578512
+    59ff7a9af39dc5a4788aeaf5e47a0475: -80
+  m_TransitionOverrides: {}
+--- !u!245 &245000014096268176
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WW2Full
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 0c0fc039dee712e4b8c2c41dfb045f08
+  m_FloatValues:
+    c830fbd07753c874d8e908ca5435a20c: -0.27209902
+    d2cba271535e74443b563f529367b6e7: -0.19117308
+    02145c29f00e8b9498e495e139ea6c38: 0.025578512
+    59ff7a9af39dc5a4788aeaf5e47a0475: -0.58106005
   m_TransitionOverrides: {}
