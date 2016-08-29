@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
+	public GameObject quitText;
 	public GameObject fadeObject;
 	public float fadeInAt;
 	Animator fadeAnim;
@@ -13,6 +15,7 @@ public class GameManager : MonoBehaviour {
 	PlayerController pc;
 
 	bool startFade;
+	bool gameOver;
 
 	void Start () {
 		fadeAnim = fadeObject.GetComponent<Animator>();
@@ -28,9 +31,27 @@ public class GameManager : MonoBehaviour {
 			fadeAnim.Play("FadeIn");
 			startFade = true;
 		}
+
+		// Restart
+		if (gameOver) {
+			if (Input.GetKeyDown(KeyCode.Space)) {
+				SceneManager.LoadScene(0);
+			}
+			if (Input.GetKeyDown(KeyCode.Escape)) {
+				Application.Quit();
+			}
+		}		
 	}
 
 	public void GameOver () {
 		fadeAnim.Play("FadeOut");
+		quitText.SetActive(true);
+		gameOver = true;
+	}
+
+	void OnTriggerEnter(Collider c) {
+		if (c.tag == "Player" && !gameOver) {
+			GameOver();
+		}
 	}
 }
