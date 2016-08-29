@@ -76,6 +76,7 @@ GameObject:
   - 33: {fileID: 33000013164719646}
   - 23: {fileID: 23000013228261794}
   - 64: {fileID: 64000013102581280}
+  - 208: {fileID: 208000012672118078}
   m_Layer: 0
   m_Name: taulu_luolamies
   m_TagString: Untagged
@@ -143,8 +144,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013760014888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.18, y: -0.78, z: -0.68}
-  m_LocalScale: {x: 3, y: 3, z: 5}
+  m_LocalPosition: {x: -3.05, y: 0.26, z: 0.36}
+  m_LocalScale: {x: 3, y: 2, z: 5}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000011142970882}
@@ -156,7 +157,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013986167388}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.74}
+  m_LocalPosition: {x: -0, y: 0, z: 1.518}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -168,10 +169,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010874464960}
-  m_LocalRotation: {x: -0, y: -0.68322074, z: -0, w: 0.7302119}
-  m_LocalPosition: {x: 0.47, y: 1, z: 3.65}
+  m_LocalRotation: {x: -0, y: -0.7600281, z: -0, w: 0.6498902}
+  m_LocalPosition: {x: -8.63, y: 0.758, z: 13.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: -86.302, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -98.699005, z: 0}
   m_Children:
   - {fileID: 4000010765122810}
   - {fileID: 4000010047202112}
@@ -215,7 +216,7 @@ Transform:
   m_GameObject: {fileID: 1000013220265136}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.75, z: 0}
-  m_LocalScale: {x: 1, y: 0.5, z: 0.1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012676835364}
@@ -228,7 +229,7 @@ Transform:
   m_GameObject: {fileID: 1000011596077404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.25, z: 0}
-  m_LocalScale: {x: 1, y: 1.5, z: 0.1}
+  m_LocalScale: {x: 0.8, y: 1.5, z: 0.1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012676835364}
@@ -497,7 +498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  health: 2
+  health: 1
   headShotPoints: 2
   bodyShotPoints: 1
 --- !u!114 &114000011355860902
@@ -539,3 +540,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   head: 0
   hitHead: 0
+--- !u!208 &208000012672118078
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012656139572}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.53900003, y: 0.882, z: 0.043}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.906, z: -0.22100002}
+  m_TimeToStationary: 0.5
