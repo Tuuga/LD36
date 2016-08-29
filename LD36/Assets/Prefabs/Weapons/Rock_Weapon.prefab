@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1000012261222542, guid: de8a0c28309e66945b3a6472e4bf453e, type: 2}
-  force: 15
-  upForce: 0.2
+  force: 10
+  upForce: 0.4
+  throwInterval: 1
   fabricEvent: Weapons/Rock/Shoot

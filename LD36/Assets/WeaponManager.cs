@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class WeaponManager : MonoBehaviour {
 
 	public List<GameObject> weapons;
+	List<bool> weaponsAvailable = new List<bool>(new bool[6]);
 	GameObject player;
 
 	void Start () {
@@ -15,7 +16,14 @@ public class WeaponManager : MonoBehaviour {
 		foreach (GameObject w in weapons) {
 			w.SetActive(false);
 		}
-		weapons[index].SetActive(true);
+		if(weaponsAvailable[index]) {
+			weapons[index].SetActive(true);
+		}
+	}
+
+	public void SetWeaponAvailable (int index) {
+		weaponsAvailable[index] = true;
+		SetWeaponActive(index);
 	}
 
 	void Update () {

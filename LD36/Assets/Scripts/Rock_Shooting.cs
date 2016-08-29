@@ -6,10 +6,12 @@ public class Rock_Shooting : MonoBehaviour {
 	public GameObject projectile;
 	public float force;
 	public float upForce;
+	public float throwInterval;
     public string fabricEvent;
 
 	GameObject mainCam;
 	Transform shootPos;
+	float throwTimer;
 
 	void Start () {
 		mainCam = GameObject.FindGameObjectWithTag("MainCamera");
@@ -17,12 +19,19 @@ public class Rock_Shooting : MonoBehaviour {
 	}
 
 	void Update () {
+		throwTimer -= Time.deltaTime;
 		if (Input.GetButtonDown("Fire1") && transform.parent.tag == "Player") {
 			Shoot();
         }
 	}
 
 	void Shoot () {
+		if (throwTimer > 0) {
+			return;
+		}
+
+		throwTimer = throwInterval;
+		
         Fabric.EventManager.Instance.PostEvent(fabricEvent, gameObject);
 
 		var randomRot = Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
