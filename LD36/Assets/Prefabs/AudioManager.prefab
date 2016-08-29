@@ -272,7 +272,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013874228580}
   - 114: {fileID: 114000014142428894}
-  - 114: {fileID: 114000011919962760}
+  - 114: {fileID: 114000013259504510}
   m_Layer: 0
   m_Name: MusicTRacksWW2
   m_TagString: Untagged
@@ -2274,8 +2274,9 @@ MonoBehaviour:
   _bypassEffects: 0
   _bypassListenerEffects: 0
   _bypassReverbZones: 0
-  _overrideAudioMixerGroup: 0
-  _audioMixerGroup: {fileID: 0}
+  _overrideAudioMixerGroup: 1
+  _audioMixerGroup: {fileID: 243000012752682360, guid: b67a9fe0db894134a8dd06252cdd5939,
+    type: 2}
   _notifyParentComponent: 0
   _audioBusName: 
   _overrideAudioBus: 0
@@ -2306,7 +2307,7 @@ MonoBehaviour:
   _audioClipAssetPath: 0
   _delay: 0
   _delayInBeats: 0
-  _loop: 0
+  _loop: 1
   _numLoops: -1
   _loopMarkersLoaded: 0
   _useLoopMarkers: 1
@@ -2316,7 +2317,7 @@ MonoBehaviour:
   _randomizePosition: 0
   _randomizeMinPosition: 0
   _randomizeMaxPosition: 10
-  _syncWithMusicTime: 0
+  _syncWithMusicTime: 1
   _markers: []
   _regions: []
 --- !u!114 &114000011099964030
@@ -2538,13 +2539,14 @@ MonoBehaviour:
   _bypassEffects: 0
   _bypassListenerEffects: 0
   _bypassReverbZones: 0
-  _overrideAudioMixerGroup: 0
-  _audioMixerGroup: {fileID: 0}
+  _overrideAudioMixerGroup: 1
+  _audioMixerGroup: {fileID: 243000014028140808, guid: b67a9fe0db894134a8dd06252cdd5939,
+    type: 2}
   _notifyParentComponent: 0
   _audioBusName: 
   _overrideAudioBus: 0
   _overrideMusicTimeSettings: 0
-  _musicTimeSettingsIndex: -1
+  _musicTimeSettingsIndex: 4
   _musicTempo: -1
   _musicTimeSignatureLower: 0
   _musicTimeSignatureUpper: 0
@@ -2570,7 +2572,7 @@ MonoBehaviour:
   _audioClipAssetPath: 0
   _delay: 0
   _delayInBeats: 0
-  _loop: 0
+  _loop: 1
   _numLoops: -1
   _loopMarkersLoaded: 0
   _useLoopMarkers: 1
@@ -2580,7 +2582,7 @@ MonoBehaviour:
   _randomizePosition: 0
   _randomizeMinPosition: 0
   _randomizeMaxPosition: 10
-  _syncWithMusicTime: 0
+  _syncWithMusicTime: 1
   _markers: []
   _regions: []
 --- !u!114 &114000011207477226
@@ -2813,7 +2815,7 @@ MonoBehaviour:
       _data: []
   _eventList:
   - _UnSet_
-  - play Stmusic
+  - play music
   - RandomBulletImpactMetal
   - RunningStep1
   - RunningStep2
@@ -2925,39 +2927,6 @@ MonoBehaviour:
   _eventName: RunningStep1
   _eventID: 0
   _overrideEventTriggerAction: 0
-  _overrideParameters:
-    _overrideIncomingEventAction: 0
-    _incomingEventAction: 0
-    _overrideEventAction: 0
-    _type: 0
-    _floatParameter: 1
-    _stringParameter: 
-    _switchPresetData:
-      _sourcePreset: 
-      _targetPreset: 
-    _dspParameterData:
-      _dspType: 0
-      _parameter: 
-      _value: 0
-      _time: 0
-      _curve: 0.5
-    _transitionToSnapshotData:
-      _snapshot: 
-      _timeToReach: 0
---- !u!114 &114000011919962760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011729699682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1137554331, guid: 4b4e8768ed04d6a4f98af6f4f83be984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: play Stmusic
-  _eventID: 0
-  _overrideEventTriggerAction: 1
   _overrideParameters:
     _overrideIncomingEventAction: 0
     _incomingEventAction: 0
@@ -3706,6 +3675,39 @@ MonoBehaviour:
     _transitionToSnapshotData:
       _snapshot: 
       _timeToReach: 0
+--- !u!114 &114000013259504510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011729699682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1137554331, guid: 4b4e8768ed04d6a4f98af6f4f83be984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: play music
+  _eventID: 116807225
+  _overrideEventTriggerAction: 1
+  _overrideParameters:
+    _overrideIncomingEventAction: 0
+    _incomingEventAction: 0
+    _overrideEventAction: 0
+    _type: 0
+    _floatParameter: 1
+    _stringParameter: 
+    _switchPresetData:
+      _sourcePreset: 
+      _targetPreset: 
+    _dspParameterData:
+      _dspType: 0
+      _parameter: 
+      _value: 0
+      _time: 0
+      _curve: 0.5
+    _transitionToSnapshotData:
+      _snapshot: 
+      _timeToReach: 0
 --- !u!114 &114000013393621032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4158,7 +4160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _numVirtualizationEvents: 100
-  _maxInstances: 1
+  _maxInstances: 0
   _stealingBehaviour: 0
   _minimumPlaybackInterval: 0
   _overrideParentVolume: 0
@@ -4189,13 +4191,14 @@ MonoBehaviour:
   _bypassEffects: 0
   _bypassListenerEffects: 0
   _bypassReverbZones: 0
-  _overrideAudioMixerGroup: 0
-  _audioMixerGroup: {fileID: 0}
+  _overrideAudioMixerGroup: 1
+  _audioMixerGroup: {fileID: 243000012015331196, guid: b67a9fe0db894134a8dd06252cdd5939,
+    type: 2}
   _notifyParentComponent: 0
   _audioBusName: 
   _overrideAudioBus: 0
   _overrideMusicTimeSettings: 0
-  _musicTimeSettingsIndex: -1
+  _musicTimeSettingsIndex: 4
   _musicTempo: -1
   _musicTimeSignatureLower: 0
   _musicTimeSignatureUpper: 0
@@ -4221,7 +4224,7 @@ MonoBehaviour:
   _audioClipAssetPath: 0
   _delay: 0
   _delayInBeats: 0
-  _loop: 0
+  _loop: 1
   _numLoops: -1
   _loopMarkersLoaded: 0
   _useLoopMarkers: 1
@@ -4231,7 +4234,7 @@ MonoBehaviour:
   _randomizePosition: 0
   _randomizeMinPosition: 0
   _randomizeMaxPosition: 10
-  _syncWithMusicTime: 0
+  _syncWithMusicTime: 1
   _markers: []
   _regions: []
 --- !u!114 &114000014142428894
@@ -4261,7 +4264,7 @@ MonoBehaviour:
   _pan2DRandomization: 0
   _override3DProperties: 0
   _priority: 128
-  _panLevel: 1
+  _panLevel: 0
   _spreadLevel: 0
   _dopplerLevel: 1
   _maxDistance: 500
