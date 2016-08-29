@@ -7,6 +7,7 @@ public class Mp40_Shooting : MonoBehaviour {
 	public LayerMask mask;
 
 	public string fabricEvent;
+	public GameObject projectile;
 
 	GameObject mainCam;
 	float shootTimer;
@@ -46,6 +47,7 @@ public class Mp40_Shooting : MonoBehaviour {
 				hit.transform.parent.GetComponent<HitDetection>().GotHit();
 			}
 			Debug.DrawLine(mainCam.transform.position, hit.point);
+			GameObject projIns = (GameObject)Instantiate(projectile, hit.point, Quaternion.identity);
 		}
 	}
 }

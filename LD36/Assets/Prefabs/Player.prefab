@@ -384,6 +384,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 257
   fabricEvent: Weapons/MP40/Shoot
+  projectile: {fileID: 1000013276799016, guid: 066d9f7141c33d94b908ffbe3fcb3426, type: 2}
 --- !u!114 &114000012373483240
 MonoBehaviour:
   m_ObjectHideFlags: 1
