@@ -497,8 +497,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  headHP: 1
-  bodyHP: 2
+  health: 2
+  headShotPoints: 2
+  bodyShotPoints: 1
 --- !u!114 &114000011355860902
 MonoBehaviour:
   m_ObjectHideFlags: 1

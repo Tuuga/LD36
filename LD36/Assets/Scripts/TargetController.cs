@@ -4,8 +4,10 @@ using System.Collections;
 public class TargetController: MonoBehaviour {
 
 	public float speed;
-	public int headHP;
-	public int bodyHP;
+	public int health;
+
+	public int headShotPoints;
+	public int bodyShotPoints;
 
 	int timesShotHead;
 	int timesShotBody;
@@ -56,12 +58,15 @@ public class TargetController: MonoBehaviour {
 	}
 
 	public void Hit(bool head) {
+		health--;
 		if (head) {
 			timesShotHead++;
+			Score.system.AddPoints(headShotPoints);
 		} else {
 			timesShotBody++;
+			Score.system.AddPoints(bodyShotPoints);
 		}
-		if (timesShotHead >= headHP || timesShotBody >= bodyHP) {
+		if (health <= 0) {
 			Die();
 		}
 	}
