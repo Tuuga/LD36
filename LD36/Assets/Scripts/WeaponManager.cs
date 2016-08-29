@@ -7,9 +7,11 @@ public class WeaponManager : MonoBehaviour {
 	public List<GameObject> weapons;
 	List<bool> weaponsAvailable = new List<bool>(new bool[6]);
 	GameObject player;
+	Transform weaponPos;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
+		weaponPos = GameObject.Find("Shoot Point").transform;
 	}
 	
 	void SetWeaponActive (int index) {
@@ -44,6 +46,11 @@ public class WeaponManager : MonoBehaviour {
 		}
 		if (Input.GetKeyDown(KeyCode.Alpha6)) {
 			SetWeaponActive(5);
+		}
+
+		foreach (GameObject w in weapons) {
+			w.transform.position = weaponPos.position;
+			w.transform.rotation = weaponPos.rotation;
 		}
 	}
 }

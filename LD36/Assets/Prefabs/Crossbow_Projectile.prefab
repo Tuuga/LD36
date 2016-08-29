@@ -25,7 +25,7 @@ GameObject:
   - 114: {fileID: 114000013630618204}
   - 136: {fileID: 136000012030584654}
   - 114: {fileID: 114000013977400300}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Crossbow_Projectile
   m_TagString: Projectile
   m_Icon: {fileID: 0}

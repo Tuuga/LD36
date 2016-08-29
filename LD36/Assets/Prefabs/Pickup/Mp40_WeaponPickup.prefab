@@ -358,4 +358,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ce14b73afcfd43b1c48bed3b13c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponIndex: 4
+  weaponIndex: 2
